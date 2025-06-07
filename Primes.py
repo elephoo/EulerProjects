@@ -19,3 +19,19 @@ def primes_up_to(n):
             for j in range(i, n + 1, i):
                 numbers[j - 2] = False
     return primes
+
+
+def prime_factors(number):
+    factors = []
+    current_factor = 2
+    while number % current_factor == 0:
+        factors.append(current_factor)
+        number /= current_factor
+    current_factor += 1
+    while number != 1:
+        if number % current_factor == 0:
+            factors.append(current_factor)
+            number /= current_factor
+        else:
+            current_factor += 2
+    return factors

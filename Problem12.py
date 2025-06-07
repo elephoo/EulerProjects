@@ -1,4 +1,4 @@
-from Problem3 import prime_factors
+from Primes import prime_factors
 from math import prod
 from collections import Counter
 

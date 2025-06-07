@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-from Problem3 import prime_factors
+from Primes import prime_factors
 
 factors = defaultdict(int)
 for i in range(2,20):
