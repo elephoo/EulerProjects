@@ -28,6 +28,7 @@ def factors(n):
     return p_factors_to_divisors(list(Counter(prime_factors(n)).items()), [1])[:-1]
 
 
+
 def amicable(a):
     if a == 1:
         return False
@@ -38,9 +39,14 @@ def amicable(a):
         return False
 
 
-total = 0
-for x in range(1, 10000):
-    if amicable(x):
-        total += x
 
-print(total)
+if __name__ == '__main__':
+
+
+
+    total = 0
+    for x in range(1, 10000):
+        if amicable(x):
+            total += x
+
+    print(total)
