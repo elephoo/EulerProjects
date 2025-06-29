@@ -1,4 +1,4 @@
-def fibbonacci(n):
+def fibonacci_up_to_n(n):
     last_values = (0,1)
     current_value = 0
     while current_value <= n:
@@ -8,7 +8,7 @@ def fibbonacci(n):
             yield current_value
 
 total = 0
-for value in fibbonacci(4000000):
+for value in fibonacci_up_to_n(4000000):
     if value % 2 == 0:
         total += value
 
