@@ -6,10 +6,10 @@ def upper_bound(n):
 
 
 def nth_prime(n):
-    primes = primes_up_to(upper_bound(n))
+    primes = primes_up_to_n(upper_bound(n))
     return primes[n - 1]
 
-def primes_up_to(n):
+def primes_up_to_n(n):
     primes = []
     numbers = list(range(2, n + 1))
     for i in range(2, n + 1):
